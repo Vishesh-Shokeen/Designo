@@ -1,0 +1,28 @@
+@import url(/src/App.css);
+
+
+
+.component {
+    opacity: 0;
+    transform: translateX(-200px);
+    filter: blur(50px);
+    transition: all 1000ms ease-in-out;
+}
+
+
+
+.component.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translate(0);
+}
+
+
+.cat{
+    transform:scale(.2);
+    transition: all 500ms ease-in-out;
+}
+
+.cat.show{
+    transform: scale(.9);
+}

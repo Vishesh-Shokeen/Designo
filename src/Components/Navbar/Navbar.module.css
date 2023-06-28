@@ -1,0 +1,104 @@
+@import url(/src/App.css);
+
+
+
+.nav a {
+    margin: 1rem;
+    text-decoration: none;
+    color: var(--Pri-Black);
+    font-weight: var(--FW-400);
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    width: min(90%, 1200px);
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: var(--Pri-White);
+}
+
+
+
+.navbar img:first-of-type {
+    max-width: 12rem;
+}
+
+
+.nav>ul {
+    list-style: none;
+    padding: 0;
+    font-weight: var(--FW-200);
+
+    display: flex;
+}
+
+.nav li {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+
+.nav li:hover {
+    border-bottom: 1px solid black;
+}
+
+
+
+
+@media (width < 650px) {
+
+    .navbar {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .nav a {
+        margin: 1rem;
+        text-decoration: none;
+        color: var(--Pri-White);
+    }
+
+    .nav.slide {
+        transform: translate(0);
+    }
+
+
+    .nav {
+        position: absolute;
+        inset: 0;
+        top: 4rem;
+        min-height: 100vh;
+        transform: translateY(-2000px);
+        transition: transform 300ms ease-in-out;
+        background-color: rgba(0, 0, 0, .3);
+        z-index: 5;
+    }
+
+
+    .nav>ul {
+        background-color: var(--Pri-Black);
+        color: var(--Pri-White);
+        flex-direction: column;
+        font-weight: var(--FW-600);
+        font-size: 2rem;
+    }
+
+}
+
+@media (width > 650px) {
+    .icon_menu {
+        display: none;
+    }
+
+}
+
+
+.nav .activeLink {
+    color: rgb(249, 88, 35);
+}

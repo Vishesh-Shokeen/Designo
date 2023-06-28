@@ -1,0 +1,53 @@
+@import url(/src/App.css);
+
+
+.card {
+    display: grid;
+    justify-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+.card>img {
+    max-width: 340px;
+}
+
+.card_text {
+    text-align: center;
+    background-color: #FDF3F0;
+    padding: 1rem;
+}
+
+.card_text>h2 {
+    color: var(--Pri-Peach);
+    letter-spacing: 5px;
+}
+
+.card_text>p {
+    max-width: 32ch;
+}
+
+
+@media (width < 800px) {
+    .card {
+        grid-auto-flow: column;
+    }
+
+    .card_text {
+        display: grid;
+        align-content: center;
+    }
+}
+
+@media (width < 600px) {
+    .card {
+        grid-auto-flow: row;
+        margin: 0 auto;
+    }
+
+    .card_text {
+        display: grid;
+        align-content: center;
+    }
+}

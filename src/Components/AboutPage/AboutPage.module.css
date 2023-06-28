@@ -1,0 +1,149 @@
+@import url(/src/App.css);
+
+
+.aboutUs {
+    width: min(90%, 1200px);
+    margin: 2rem auto 8rem auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 1rem;
+    overflow: hidden;
+    opacity: 0;
+    filter: blur(50px);
+    transition: opacity 1000ms ease-in-out;
+}
+
+
+
+.aboutUs_text {
+    flex: 1;
+    color: var(--Pri-White);
+
+
+    background: url(/Designo/assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+    background-color: var(--Pri-Peach);
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    padding: 0 min(4rem, 4vw);
+}
+
+
+
+.aboutUs_text h1 {
+    font-size: clamp(1.5rem, 4vw + 1rem, 3.2rem);
+}
+
+
+
+
+
+.aboutUs_text p {
+    line-height: 1.5;
+    font-size: minmax(1rem, 1.5rem);
+    max-width: 55ch;
+}
+
+
+
+
+/*************************/
+
+.about_Card {
+    width: min(90%, 1200px);
+    margin: 15rem auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+}
+
+
+
+
+
+.about_card_text {
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+    flex: 1;
+    padding: min(3rem, 3vw);
+    background: url(/Designo/assets/shared/desktop/bg-pattern-two-circles.svg);
+    background-color: #FDF3F0;
+}
+
+
+
+
+
+.about_card_text>h2 {
+    font-size: clamp(1.5rem, 3vw + 1rem, 2.8rem);
+    font-weight: 400;
+    color: var(--Pri-Peach);
+}
+
+
+
+
+
+.about_card_text>p {
+    max-width: 50ch;
+}
+
+
+
+
+/*****************************/
+
+
+@media (width <=800px) {
+
+    .aboutUs {
+        flex-direction: column;
+    }
+
+    .aboutUs_image,
+    .about_Card>picture {
+        order: -1;
+    }
+
+    
+    
+    .about_Card  >picture > img,
+    .aboutUs_image>img {
+        width: 100%;
+    }
+
+    .aboutUs_text {
+        text-align: center;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+
+    /*************************/
+
+
+    .about_Card {
+        text-align: center;
+        flex-direction: column;
+    }
+
+
+    .about_card_text {
+        padding: 2rem;
+    }
+
+}
+
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+
+}

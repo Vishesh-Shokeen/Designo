@@ -1,0 +1,114 @@
+@import url(/src/App.css);
+
+
+.footer_container {
+    background-color: var(--Pri-Black);
+    color: var(--Sec-Light-Gray);
+    padding: 0 8rem 4rem 6rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: var(--Sec-Light-Gray);
+}
+
+
+
+.footerNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12rem ;
+}
+
+
+.footerNav img {
+    max-width: 15rem;
+}
+
+
+.footerNav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+
+.footerNav ul > a {
+    margin: 1rem;
+}
+
+
+
+
+.footer_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem ;
+}
+
+
+
+.footer_wrap > *{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer_wrap > * >p:first-child{
+    font-weight: var(--FW-600);
+}
+
+
+
+.socialIcons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+
+
+
+@media (width < 800px) {
+
+    .footer_container{
+        padding: 1rem;
+    }
+
+
+    .footer_wrap{
+        flex-direction: column;
+    }
+
+
+    .footer_wrap > *{
+        padding: 2rem 0;
+        text-align: center;
+
+    }
+
+
+
+    .footerNav{
+        flex-direction: column;
+    }
+    
+    
+    
+    .footerNav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerNav li {
+        margin: 1.5rem  0;
+    }
+}

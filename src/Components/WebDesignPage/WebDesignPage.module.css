@@ -1,0 +1,14 @@
+@import url(/src/App.css);
+
+.designs {
+    width: min(90%, 1200px);
+    margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 5rem;
+}
+
+.designs > *{
+    margin: 0 auto;
+}

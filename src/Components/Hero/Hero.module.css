@@ -1,0 +1,66 @@
+@import url(/src/App.css);
+
+
+
+.hero_container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+
+    background-color: var(--Pri-Peach);
+    width: min(90% , 1200px);
+    margin: 2rem auto 10rem auto;
+    border-radius: 1rem;
+    min-height: 80vh;
+}
+
+
+
+
+.hero_text {
+    color: var(--Pri-White);
+    padding: min(5rem , 8vw) ;
+    margin: auto 0;
+}
+
+
+.hero_text > h1{
+    font-size: clamp(2rem , 2vw + 1rem, 3rem);
+    line-height: 1;
+}
+
+
+.hero_text > p{
+    margin: 2rem 0;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+
+.hero_image{
+    background: url(/Designo/assets/home/desktop/bg-pattern-hero-home.svg);
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.hero_image > img {
+    position: absolute;
+    inset: 0;
+    margin: 0 auto;
+}
+
+
+@media (width < 900px) {
+    .hero_container{
+        grid-auto-flow: row;
+        grid-auto-rows: 1fr;
+    }
+
+
+    .hero_text{
+        text-align: center;
+    }
+    
+}

@@ -1,0 +1,78 @@
+@import url(/src/App.css);
+
+
+.skills_container {
+    width: min(90%, 1200px);
+    margin: 5rem auto;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 2rem;
+
+}
+
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.skill>img {
+    border-radius: 50%;
+    background:url(assets/home/desktop/bg-pattern-hero-home.svg) ;
+    background-size: cover;
+}
+
+
+.skill_text {
+    text-align: center;
+    padding: .5rem;
+}
+
+.skill_text > *{
+margin: 1rem 0;
+}
+
+
+.skill_text>h3 {
+    font-size: clamp(1.5rem, 2vw, 1.8rem);
+    font-weight: var(--FW-400);
+}
+
+.skill_text>p {
+    line-height: 1.5;
+    max-width: 35ch;
+    text-align: center;
+} 
+
+
+@media (width < 800px) {
+    .skills_container{
+        grid-auto-flow: row;
+    }
+
+
+    .skill{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}
+
+
+@media (width < 500px) {
+    .skills_container{
+        grid-auto-flow: row;
+    }
+
+
+    .skill{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}

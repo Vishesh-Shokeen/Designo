@@ -1,0 +1,25 @@
+@import url(/src/App.css);
+
+
+.banner{
+    width:min(90% , 1200px);
+    margin: 0 auto;
+    background: url(/Designo/assets/shared/desktop/bg-pattern-call-to-action.svg);
+    background-position: right;
+    background-color: var(--Pri-Peach);
+    color: var(--Pri-White);
+    padding: 4rem ;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.banner_text > h1 {
+    font-size: clamp(2rem , 3vw , 3rem);
+}
+
+.banner_text > p {
+    margin: 1rem 0;
+    font-size: clamp(1rem , 2vw , 1.5rem);
+    max-width: 40ch;
+    margin: 0 auto;
+}
