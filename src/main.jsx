@@ -5,7 +5,7 @@ import './App.css'
 import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename={import.meta.env.DEV ? '/' : '/react-vite-gh-pages/'}>
+  <BrowserRouter basename={import.meta.env.DEV ? '/' : '/Designo/'}>
     <App />
   </BrowserRouter>
 
