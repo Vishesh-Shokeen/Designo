@@ -23,7 +23,7 @@ export default function Navbar() {
                 <img src={logo} alt="logo" />
             </NavLink>
 
-            <img className={icon_menu} onClick={navSlider} src={visible ? "/Designo/assets/shared/mobile/icon-close.svg" : "/Designo/assets/shared/mobile/icon-hamburger.svg"} alt="icon_menu" />
+            <img className={icon_menu} onClick={navSlider} src={visible ? "/assets/shared/mobile/icon-close.svg" : "/assets/shared/mobile/icon-hamburger.svg"} alt="icon_menu" />
             <nav className={nav}>
                 <ul>
                     <NavLink to='/about'
